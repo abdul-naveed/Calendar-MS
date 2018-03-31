@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EF466AE32061864A00B92F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466AE22061864A00B92F7F /* AppDelegate.swift */; };
-		EF466AE52061864A00B92F7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466AE42061864A00B92F7F /* ViewController.swift */; };
 		EF466AE82061864A00B92F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF466AE62061864A00B92F7F /* Main.storyboard */; };
 		EF466AEB2061864A00B92F7F /* MSCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF466AE92061864A00B92F7F /* MSCalendar.xcdatamodeld */; };
 		EF466AED2061864A00B92F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF466AEC2061864A00B92F7F /* Assets.xcassets */; };
 		EF466AF02061864A00B92F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF466AEE2061864A00B92F7F /* LaunchScreen.storyboard */; };
 		EF466AFB2061864A00B92F7F /* MSCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466AFA2061864A00B92F7F /* MSCalendarTests.swift */; };
+		EF466B09206186FD00B92F7F /* CalendarDayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B08206186FD00B92F7F /* CalendarDayHeaderView.swift */; };
+		EF466B0B206192E400B92F7F /* CalendarComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B0A206192E400B92F7F /* CalendarComponentView.swift */; };
+		EF466B602064764C00B92F7F /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B582064764B00B92F7F /* AgendaTableViewCell.swift */; };
+		EF466B612064764C00B92F7F /* AgendaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF466B592064764B00B92F7F /* AgendaTableViewCell.xib */; };
+		EF466B622064764C00B92F7F /* AgendaHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B5B2064764B00B92F7F /* AgendaHeaderTableViewCell.swift */; };
+		EF466B632064764C00B92F7F /* AgendaHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF466B5C2064764B00B92F7F /* AgendaHeaderTableViewCell.xib */; };
+		EF466B642064764C00B92F7F /* CalendarRowDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B5E2064764B00B92F7F /* CalendarRowDateCollectionViewCell.swift */; };
+		EF466B652064764C00B92F7F /* CalendarRowDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF466B5F2064764B00B92F7F /* CalendarRowDateCollectionViewCell.xib */; };
+		EF466B682064765800B92F7F /* CalendarRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B662064765800B92F7F /* CalendarRowTableViewCell.swift */; };
+		EF466B692064765800B92F7F /* CalendarRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF466B672064765800B92F7F /* CalendarRowTableViewCell.xib */; };
+		EF466B6B206477B400B92F7F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF466B6A206477B400B92F7F /* CalendarViewController.swift */; };
+		EFF4E42D206C238D00B28B3F /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4E42C206C238D00B28B3F /* CalendarModel.swift */; };
+		EFF4E430206C5BF400B28B3F /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4E42F206C5BF400B28B3F /* EventsManager.swift */; };
+		EFF4E433206C5C2600B28B3F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF4E432206C5C2600B28B3F /* EventKit.framework */; };
+		EFF4E435206F769900B28B3F /* CalendarListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4E434206F769900B28B3F /* CalendarListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +43,6 @@
 /* Begin PBXFileReference section */
 		EF466ADF2061864A00B92F7F /* MSCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF466AE22061864A00B92F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF466AE42061864A00B92F7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF466AE72061864A00B92F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF466AEA2061864A00B92F7F /* MSCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MSCalendar.xcdatamodel; sourceTree = "<group>"; };
 		EF466AEC2061864A00B92F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +51,21 @@
 		EF466AF62061864A00B92F7F /* MSCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF466AFA2061864A00B92F7F /* MSCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCalendarTests.swift; sourceTree = "<group>"; };
 		EF466AFC2061864B00B92F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF466B08206186FD00B92F7F /* CalendarDayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayHeaderView.swift; sourceTree = "<group>"; };
+		EF466B0A206192E400B92F7F /* CalendarComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarComponentView.swift; sourceTree = "<group>"; };
+		EF466B582064764B00B92F7F /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		EF466B592064764B00B92F7F /* AgendaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaTableViewCell.xib; sourceTree = "<group>"; };
+		EF466B5B2064764B00B92F7F /* AgendaHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EF466B5C2064764B00B92F7F /* AgendaHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		EF466B5E2064764B00B92F7F /* CalendarRowDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarRowDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF466B5F2064764B00B92F7F /* CalendarRowDateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarRowDateCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF466B662064765800B92F7F /* CalendarRowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarRowTableViewCell.swift; sourceTree = "<group>"; };
+		EF466B672064765800B92F7F /* CalendarRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarRowTableViewCell.xib; sourceTree = "<group>"; };
+		EF466B6A206477B400B92F7F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		EFF4E42C206C238D00B28B3F /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		EFF4E42F206C5BF400B28B3F /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
+		EFF4E432206C5C2600B28B3F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		EFF4E434206F769900B28B3F /* CalendarListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF4E433206C5C2600B28B3F /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +93,7 @@
 				EF466AE12061864A00B92F7F /* MSCalendar */,
 				EF466AF92061864A00B92F7F /* MSCalendarTests */,
 				EF466AE02061864A00B92F7F /* Products */,
+				EFF4E431206C5C2600B28B3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +109,9 @@
 		EF466AE12061864A00B92F7F /* MSCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				EFF4E42E206C5BE500B28B3F /* EventsManager */,
+				EF466B07206186CA00B92F7F /* Calendar Component */,
 				EF466AE22061864A00B92F7F /* AppDelegate.swift */,
-				EF466AE42061864A00B92F7F /* ViewController.swift */,
 				EF466AE62061864A00B92F7F /* Main.storyboard */,
 				EF466AEC2061864A00B92F7F /* Assets.xcassets */,
 				EF466AEE2061864A00B92F7F /* LaunchScreen.storyboard */,
@@ -97,6 +128,82 @@
 				EF466AFC2061864B00B92F7F /* Info.plist */,
 			);
 			path = MSCalendarTests;
+			sourceTree = "<group>";
+		};
+		EF466B07206186CA00B92F7F /* Calendar Component */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4E42B206C237700B28B3F /* CalendarModel */,
+				EF466B0C20619B6500B92F7F /* CalendarList */,
+				EF466B08206186FD00B92F7F /* CalendarDayHeaderView.swift */,
+				EF466B0A206192E400B92F7F /* CalendarComponentView.swift */,
+				EF466B6A206477B400B92F7F /* CalendarViewController.swift */,
+			);
+			path = "Calendar Component";
+			sourceTree = "<group>";
+		};
+		EF466B0C20619B6500B92F7F /* CalendarList */ = {
+			isa = PBXGroup;
+			children = (
+				EF466B662064765800B92F7F /* CalendarRowTableViewCell.swift */,
+				EF466B672064765800B92F7F /* CalendarRowTableViewCell.xib */,
+				EF466B572064764B00B92F7F /* AgendaCell */,
+				EF466B5D2064764B00B92F7F /* DateCollectionViewCell */,
+			);
+			path = CalendarList;
+			sourceTree = "<group>";
+		};
+		EF466B572064764B00B92F7F /* AgendaCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF466B582064764B00B92F7F /* AgendaTableViewCell.swift */,
+				EF466B592064764B00B92F7F /* AgendaTableViewCell.xib */,
+				EF466B5A2064764B00B92F7F /* Header */,
+			);
+			path = AgendaCell;
+			sourceTree = "<group>";
+		};
+		EF466B5A2064764B00B92F7F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EF466B5B2064764B00B92F7F /* AgendaHeaderTableViewCell.swift */,
+				EF466B5C2064764B00B92F7F /* AgendaHeaderTableViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EF466B5D2064764B00B92F7F /* DateCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF466B5E2064764B00B92F7F /* CalendarRowDateCollectionViewCell.swift */,
+				EF466B5F2064764B00B92F7F /* CalendarRowDateCollectionViewCell.xib */,
+			);
+			path = DateCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EFF4E42B206C237700B28B3F /* CalendarModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4E42C206C238D00B28B3F /* CalendarModel.swift */,
+				EFF4E434206F769900B28B3F /* CalendarListModel.swift */,
+			);
+			path = CalendarModel;
+			sourceTree = "<group>";
+		};
+		EFF4E42E206C5BE500B28B3F /* EventsManager */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4E42F206C5BF400B28B3F /* EventsManager.swift */,
+			);
+			path = EventsManager;
+			sourceTree = "<group>";
+		};
+		EFF4E431206C5C2600B28B3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4E432206C5C2600B28B3F /* EventKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +256,7 @@
 				TargetAttributes = {
 					EF466ADE2061864A00B92F7F = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					EF466AF52061864A00B92F7F = {
 						CreatedOnToolsVersion = 9.2;
@@ -183,8 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF466AF02061864A00B92F7F /* LaunchScreen.storyboard in Resources */,
+				EF466B632064764C00B92F7F /* AgendaHeaderTableViewCell.xib in Resources */,
 				EF466AED2061864A00B92F7F /* Assets.xcassets in Resources */,
+				EF466B692064765800B92F7F /* CalendarRowTableViewCell.xib in Resources */,
+				EF466B652064764C00B92F7F /* CalendarRowDateCollectionViewCell.xib in Resources */,
 				EF466AE82061864A00B92F7F /* Main.storyboard in Resources */,
+				EF466B612064764C00B92F7F /* AgendaTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +313,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF466AE52061864A00B92F7F /* ViewController.swift in Sources */,
+				EF466B6B206477B400B92F7F /* CalendarViewController.swift in Sources */,
+				EF466B642064764C00B92F7F /* CalendarRowDateCollectionViewCell.swift in Sources */,
+				EF466B602064764C00B92F7F /* AgendaTableViewCell.swift in Sources */,
+				EF466B622064764C00B92F7F /* AgendaHeaderTableViewCell.swift in Sources */,
 				EF466AEB2061864A00B92F7F /* MSCalendar.xcdatamodeld in Sources */,
+				EFF4E430206C5BF400B28B3F /* EventsManager.swift in Sources */,
+				EF466B09206186FD00B92F7F /* CalendarDayHeaderView.swift in Sources */,
 				EF466AE32061864A00B92F7F /* AppDelegate.swift in Sources */,
+				EF466B682064765800B92F7F /* CalendarRowTableViewCell.swift in Sources */,
+				EF466B0B206192E400B92F7F /* CalendarComponentView.swift in Sources */,
+				EFF4E435206F769900B28B3F /* CalendarListModel.swift in Sources */,
+				EFF4E42D206C238D00B28B3F /* CalendarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,8 +477,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7R2H9CJC2;
 				INFOPLIST_FILE = MSCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = microsoft.applicationTest.MSCalendar;
@@ -373,8 +494,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7R2H9CJC2;
 				INFOPLIST_FILE = MSCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = microsoft.applicationTest.MSCalendar;

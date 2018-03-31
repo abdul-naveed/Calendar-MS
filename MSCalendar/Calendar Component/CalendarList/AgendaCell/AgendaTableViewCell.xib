@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgendaTableViewCell" id="KGk-i7-Jjw" customClass="AgendaTableViewCell" customModule="MSCalendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPO-7g-i9d">
+                        <rect key="frame" x="16" y="8" width="86" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="86" id="1wc-nw-AMY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9h 30m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOD-nw-CCc">
+                        <rect key="frame" x="16" y="31" width="107" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="uAH-j9-iyU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Appointment at BMW OF SAN FRANSICO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vj-Se-9LC">
+                        <rect key="frame" x="170" y="8" width="173" height="35"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAWARS ROOM AT CONFERENCE LOCAL STAGE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjZ-Gj-KpA">
+                        <rect key="frame" x="170" y="46" width="173" height="35"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                        <color key="textColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eef-YZ-7xd">
+                        <rect key="frame" x="129" y="8" width="14" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="G3e-4s-BSu"/>
+                            <constraint firstAttribute="height" constant="18" id="uKc-vJ-j11"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="14" id="z2N-XP-49Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                        <color key="textColor" red="0.92156862745098034" green="0.77254901960784317" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="NjZ-Gj-KpA" secondAttribute="bottom" constant="-5" id="4uX-ys-iQa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hOD-nw-CCc" secondAttribute="bottom" constant="33" id="7gx-ac-ITO"/>
+                    <constraint firstItem="9vj-Se-9LC" firstAttribute="leading" secondItem="hOD-nw-CCc" secondAttribute="trailing" constant="47" id="BQR-cL-59n"/>
+                    <constraint firstItem="xPO-7g-i9d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="H6A-1G-5za"/>
+                    <constraint firstItem="hOD-nw-CCc" firstAttribute="top" secondItem="xPO-7g-i9d" secondAttribute="bottom" constant="2" id="Ikn-ud-9N4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9vj-Se-9LC" secondAttribute="trailing" constant="-12" id="Lma-9d-7x5"/>
+                    <constraint firstItem="hOD-nw-CCc" firstAttribute="bottom" secondItem="9vj-Se-9LC" secondAttribute="bottom" id="NJI-MI-O3n"/>
+                    <constraint firstItem="xPO-7g-i9d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="O7h-gl-VgW"/>
+                    <constraint firstItem="9vj-Se-9LC" firstAttribute="trailing" secondItem="NjZ-Gj-KpA" secondAttribute="trailing" id="Ydi-fi-VtM"/>
+                    <constraint firstItem="xPO-7g-i9d" firstAttribute="leading" secondItem="hOD-nw-CCc" secondAttribute="leading" id="btg-mH-Kvr"/>
+                    <constraint firstItem="xPO-7g-i9d" firstAttribute="firstBaseline" secondItem="9vj-Se-9LC" secondAttribute="firstBaseline" id="e4q-sY-8es"/>
+                    <constraint firstItem="9vj-Se-9LC" firstAttribute="leading" secondItem="Eef-YZ-7xd" secondAttribute="trailing" constant="27" id="kGC-ja-DYe"/>
+                    <constraint firstItem="9vj-Se-9LC" firstAttribute="leading" secondItem="NjZ-Gj-KpA" secondAttribute="leading" id="kHM-bt-lqb"/>
+                    <constraint firstItem="Eef-YZ-7xd" firstAttribute="leading" secondItem="xPO-7g-i9d" secondAttribute="trailing" constant="27" id="llM-sD-noy"/>
+                    <constraint firstItem="xPO-7g-i9d" firstAttribute="top" secondItem="Eef-YZ-7xd" secondAttribute="top" id="o5N-mX-Ggd"/>
+                    <constraint firstItem="NjZ-Gj-KpA" firstAttribute="top" secondItem="9vj-Se-9LC" secondAttribute="bottom" constant="3" id="w4T-Ca-Hli"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eventTitleLabel" destination="9vj-Se-9LC" id="Zbm-lW-hbI"/>
+                <outlet property="locationLabel" destination="NjZ-Gj-KpA" id="Evl-WW-dj2"/>
+                <outlet property="startTimeLabel" destination="xPO-7g-i9d" id="pnm-Sb-lVw"/>
+            </connections>
+            <point key="canvasLocation" x="76.5" y="-67.5"/>
+        </tableViewCell>
+    </objects>
+</document>

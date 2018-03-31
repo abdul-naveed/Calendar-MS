@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalendarRowTableViewCell" rowHeight="252" id="KGk-i7-Jjw" customClass="CalendarRowTableViewCell" customModule="collectionviewdate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="251"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="250.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AG7-Wb-3Bv">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="56"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="Ucp-qS-hTa"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6fD-jr-CM9">
+                            <size key="itemSize" width="74" height="74"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xGK-Yw-Quf">
+                        <rect key="frame" x="0.0" y="56" width="427" height="194"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="194" id="LZh-8C-sMy"/>
+                        </constraints>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </tableView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-yU-BZ1">
+                        <rect key="frame" x="379" y="198" width="40" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="CI7-oi-4Ej"/>
+                            <constraint firstAttribute="width" constant="40" id="iyX-0V-IW3"/>
+                        </constraints>
+                        <state key="normal" image="arrow"/>
+                        <connections>
+                            <action selector="collapseWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aM2-4B-NjL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AG7-Wb-3Bv" secondAttribute="trailing" id="1YQ-uH-mwP"/>
+                    <constraint firstItem="AG7-Wb-3Bv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DSn-9e-sSM"/>
+                    <constraint firstItem="AG7-Wb-3Bv" firstAttribute="leading" secondItem="xGK-Yw-Quf" secondAttribute="leading" id="I3T-u6-LR9"/>
+                    <constraint firstItem="xGK-Yw-Quf" firstAttribute="top" secondItem="AG7-Wb-3Bv" secondAttribute="bottom" id="Iw5-0c-mFT"/>
+                    <constraint firstItem="AG7-Wb-3Bv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q1D-jG-og0"/>
+                    <constraint firstAttribute="bottom" secondItem="HUf-yU-BZ1" secondAttribute="bottom" constant="10.5" id="Tm8-Q6-tVL"/>
+                    <constraint firstAttribute="trailing" secondItem="HUf-yU-BZ1" secondAttribute="trailing" constant="8" id="iOz-e8-F0N"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xGK-Yw-Quf" secondAttribute="bottom" constant="-10" id="jhg-Mj-JPh"/>
+                    <constraint firstItem="AG7-Wb-3Bv" firstAttribute="trailing" secondItem="xGK-Yw-Quf" secondAttribute="trailing" id="zFW-y4-Pu4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collapseButton" destination="HUf-yU-BZ1" id="CWU-hD-8b9"/>
+                <outlet property="dateListCollectionView" destination="AG7-Wb-3Bv" id="rWw-qB-LLa"/>
+                <outlet property="eventsHeightConstraint" destination="LZh-8C-sMy" id="AS1-H8-0JZ"/>
+                <outlet property="eventsTableView" destination="xGK-Yw-Quf" id="QUT-f4-7nL"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="-72.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="78" height="82"/>
+    </resources>
+</document>
