@@ -113,6 +113,7 @@ extension CalendarViewController: UITableViewDataSource {
             EventsManager.load(from: startDate!, to: endDate!) { 
                 if let events = $0 {
                     dateListModel?.eventList = events
+                    cell.reloadDates()
                 } else {
                     // There was an error while accessing
                 }

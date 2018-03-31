@@ -60,4 +60,18 @@ class CalendarModel: NSObject {
     func startOfMonth() -> Date {
         return Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Calendar.current.startOfDay(for: dateObject!)))!
     }
+    
+    //is Current Date
+    func isCurrentDate() -> Bool {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let firstDateStr = dateFormatter.string(from: dateObject!)
+        let secondDateStr = dateFormatter.string(from: Date())
+        
+        if(firstDateStr == secondDateStr)
+        {
+            return true
+        }
+        return false
+    }
 }

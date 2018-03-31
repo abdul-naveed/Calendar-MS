@@ -16,16 +16,17 @@ class CalendarRowDateCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var heightConstraint:NSLayoutConstraint!
     
+    @IBOutlet weak var dotLabel:UILabel!
+    
+    @IBOutlet weak var displayCurrentLbl:UILabel!
+    
     func displayLabelValue(dateVal:String)
     {
-        self.displayLabel.text = dateVal
+        self.displayLabel.text = dateVal 
         self.monthLabel.text = ""
         self.heightConstraint.constant = 0
-//        self.displayLabel.layer.cornerRadius = 55/2
-//        self.displayLabel.clipsToBounds = true
-//        self.displayLabel.layer.backgroundColor = UIColor.blue.cgColor
-//        self.displayLabel.layer.masksToBounds = true
-//        self.displayLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.displayCurrentLbl.isHidden = true
+        self.displayLabel.textColor = UIColor.gray
     }
 
     func displayMonthLabel(dateVal:String,month:String!)
@@ -33,5 +34,15 @@ class CalendarRowDateCollectionViewCell: UICollectionViewCell {
         self.displayLabel.text = dateVal
         self.monthLabel.text = month
         self.heightConstraint.constant = 16
+        self.displayCurrentLbl.isHidden = true
+        self.displayLabel.textColor = UIColor.gray
+    }
+    
+    func displayCurrentDateLabel ()
+    {
+        self.displayCurrentLbl.layer.cornerRadius = 15.0
+        self.displayCurrentLbl.layer.masksToBounds = true
+        self.displayCurrentLbl.isHidden = false
+        self.displayLabel.textColor = UIColor.white
     }
 }

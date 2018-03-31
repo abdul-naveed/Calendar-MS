@@ -154,7 +154,7 @@ extension CalendarRowTableViewCell: UICollectionViewDataSource {
         
         let model = self.dateListEventModel!.dateListModels![indexPath.row]
         
-        
+        //Display cell with month title
         if(model.isCurrentMonth() == false && model.isFirstDateOfMonth() == true)
         {
             cell.displayMonthLabel(dateVal: (model.getDay()), month: model.getMonth())
@@ -164,6 +164,7 @@ extension CalendarRowTableViewCell: UICollectionViewDataSource {
             cell.displayLabelValue(dateVal: (model.getDay()))
         }
         
+        //Background
         if(model.isCurrentMonth())
         {
             cell.backgroundColor = UIColor.white
@@ -172,7 +173,37 @@ extension CalendarRowTableViewCell: UICollectionViewDataSource {
         {
             cell.backgroundColor = UIColor(red: 248.0/255.0, green: 248.0/255.0, blue: 248.0/255.0, alpha: 1.0)
         }
+        
+        //Dot label
+        let eventList = self.dateListEventModel!.eventList!
+        cell.dotLabel.isHidden = !(self.eventExistsForDate(date: model.dateObject!, list: eventList))
+        
+        //Display Current Date Label
+        if(model.isCurrentDate())
+        {
+            cell.displayCurrentDateLabel()
+        }
+        
         return cell
+    }
+    
+    
+    func eventExistsForDate(date:Date,list:[CalendarEvent]) -> Bool {
+        var eventExist:Bool = false
+        for evnt in list {
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let firstDateStr = dateFormatter.string(from: date)
+            let secondDateStr = dateFormatter.string(from: evnt.startDate)
+            
+            if(firstDateStr == secondDateStr)
+            {
+               eventExist = true
+               break
+            }
+        }
+        return eventExist
     }
 }
 
